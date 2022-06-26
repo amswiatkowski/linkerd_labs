@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: servicetest1
+  namespace: srv
+  labels:
+    app: servicetest
+
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: servicetest
+      ver: "1"
+  template:
+    metadata:
+      labels:
+        app: servicetest
+        ver: "1"
+    spec:
+      containers:
+        - name: servicetest
+          image: sz3jdii/service_test:latest
+          ports:
+            - containerPort: 8080
+          env:
+            - name: TEST_STRING
+              value: service_test_B
+          imagePullPolicy: Always

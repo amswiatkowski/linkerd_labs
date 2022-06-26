@@ -1,0 +1,13 @@
+apiVersion: policy.linkerd.io/v1beta1
+kind: ServerAuthorization
+metadata:
+  namespace: srv
+  name: servicetestallowdebug
+spec:
+  server:
+    name: servicetestauthorization
+  client:
+    meshTLS:
+      serviceAccounts:
+        - namespace: srv
+          name: debuger

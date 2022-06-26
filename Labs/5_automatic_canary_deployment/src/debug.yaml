@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tools
+  namespace: srv
+  labels:
+    app: tools
+spec:
+  containers:
+  - name: tools
+    image: sz3jdii/tools
+    command:
+      - "sleep"
+      - "604800"
+    imagePullPolicy: IfNotPresent
+    
+  restartPolicy: Always

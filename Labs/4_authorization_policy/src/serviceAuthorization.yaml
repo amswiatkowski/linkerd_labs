@@ -1,0 +1,11 @@
+apiVersion: policy.linkerd.io/v1beta1
+kind: Server
+metadata:
+  namespace: srv
+  name: servicetestauthorization
+spec:
+  podSelector:
+    matchLabels:
+      app: servicetest
+      ver: "1"
+  port: 8080
