@@ -13,15 +13,12 @@
 ```
 kubectl apply -k github.com/fluxcd/flagger//kustomize/linkerd
 ```
-2. Install Linkerd SMI extension
+2. Install Linkerd SMI extension (Don't forget to add this extension to your PATH variable!)
 ```
 curl --proto '=https' --tlsv1.2 -sSfL https://linkerd.github.io/linkerd-smi/install | sh
 ```
 ```
 linkerd smi install | kubectl apply -f -
-```
-```
-export PATH=$PATH:/Users/sz3jdii/.linkerd2/bin
 ```
 ```
 linkerd smi check
