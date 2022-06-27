@@ -53,7 +53,7 @@ kubectl  --namespace srv  exec tools -it --container tools  -- /bin/bash
 ```
 7. Check if debug pod can connect to other pods of application
 ```
-for i in {1..10}; do curl servicetest:8080 ; sleep 0.5; echo ""; done
+for i in {1..10}; do curl servicetest1:8080 ; sleep 0.5; echo ""; done
 ```
 you should see simmilar response:
 ```
@@ -69,7 +69,7 @@ kubectl apply -f updatedApp.yaml
 ```
 9. Check if canary deployment has taken place. In the debug pod run
 ```
-for i in {1..10}; do curl servicetest:8080 ; sleep 0.5; echo ""; done
+for i in {1..10}; do curl servicetest1:8080 ; sleep 0.5; echo ""; done
 ```
 you should see simmilar response:
 ```
