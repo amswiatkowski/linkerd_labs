@@ -11,7 +11,7 @@
 
 1. Deploy example app from src/ directory of this lab, to the cluster
 ```
-kubectl -f exampleApp.yaml
+kubectl apply -f exampleApp.yaml
 ```
 2. Deploy the debug tool which is located also in src/ directory of this lab
 ```
