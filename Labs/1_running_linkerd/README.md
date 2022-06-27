@@ -22,15 +22,11 @@ You should see a simmilar response:
 Client version: stable-2.11.2
 Server version: unavailable
 ```
-3. Apply Linkerd to your k8s cluster
-```
-linkerd install | kubectl apply -f -
-```
-4. Validate if your k8s cluster is configured properly
+3. Validate if your k8s cluster is configured properly
 ```
 linkerd check --pre
 ```
-5. Install the control plane
+4. Apply Linkerd to your k8s cluster
 ```
 linkerd install | kubectl apply -f -
 ```
