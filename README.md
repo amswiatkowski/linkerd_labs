@@ -13,10 +13,10 @@
 
 **Adam Świątkowski**
 
-* [github/sz3jdii](https://github.com/sz3jdii)
+* [github/sz3jdii](https://github.com/amswiatkowski)
 * [Blog](https://cloudybarz.com/)
 
 ### License
 
-Copyright © 2022, [Adam Świątkowski](https://github.com/sz3jdii).
+Copyright © 2022, [Adam Świątkowski](https://github.com/amswiatkowski).
 Released under the [MIT License](LICENSE).
