@@ -13,7 +13,7 @@
 
 **Adam Świątkowski**
 
-* [github/sz3jdii](https://github.com/amswiatkowski)
+* [github/amswiatkowski](https://github.com/amswiatkowski)
 * [Blog](https://cloudybarz.com/)
 
 ### License
